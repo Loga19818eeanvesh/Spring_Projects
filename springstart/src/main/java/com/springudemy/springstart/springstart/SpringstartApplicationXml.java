@@ -1,0 +1,28 @@
+package com.springudemy.springstart.springstart;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+
+import com.springudemy.springstart.springstart.xml.XmlPersonDao;
+
+public class SpringstartApplicationXml {
+	
+	private static Logger LOGGER = LoggerFactory.getLogger(SpringstartApplicationXml.class);
+
+	public static void main(String[] args) {
+		
+		//BinarySearchImpl binarySearch = new BinarySearchImpl(new QuickSortAlgorithm());
+		ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext(
+				"applicationContext.xml");
+		XmlPersonDao personDao = applicationContext.getBean(XmlPersonDao.class);
+		System.out.println(personDao);
+		System.out.println(personDao.getXmlJdbcConnection());
+		System.out.println(applicationContext.getBeanDefinitionNames());
+		LOGGER.info("Beans Loaded -> {}", (Object) applicationContext.getBeanDefinitionNames());
+		applicationContext.close();
+	}
+
+}
