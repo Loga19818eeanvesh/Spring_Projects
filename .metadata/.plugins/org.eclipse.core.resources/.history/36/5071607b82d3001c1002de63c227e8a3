@@ -1,0 +1,18 @@
+package com.springudemy.springstart.springstart.cdi;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
+public class SomeCdiBussiness {
+	@Autowired
+	private SomeCdiDao someCdiDao;
+
+	public SomeCdiDao getSomeCdiDao() {
+		return someCdiDao;
+	}
+
+	public void setSomeCdiDao(SomeCdiDao someCdiDao) {
+		this.someCdiDao = someCdiDao;
+	}
+}

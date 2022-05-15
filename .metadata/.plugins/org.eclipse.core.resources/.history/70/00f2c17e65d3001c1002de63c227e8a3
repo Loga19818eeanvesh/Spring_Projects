@@ -1,0 +1,5 @@
+package com.springudemy.springstart.componant;
+
+public class ComponantJdbcConnection {
+
+}

@@ -1,0 +1,21 @@
+package com.springudemy.springstart.springstart;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+
+import com.springudemy.springstart.springstart.scope.PersonDAO;
+
+@SpringBootApplication
+public class SpringstartApplicationScope {
+
+	public static void main(String[] args) {
+		
+		//BinarySearchImpl binarySearch = new BinarySearchImpl(new QuickSortAlgorithm());
+		
+		ApplicationContext applicationContext = SpringApplication.run(SpringstartApplicationScope.class, args);
+		PersonDAO person1 = applicationContext.getBean(PersonDAO.class);
+		PersonDAO person2 = applicationContext.getBean(PersonDAO.class);
+	}
+
+}

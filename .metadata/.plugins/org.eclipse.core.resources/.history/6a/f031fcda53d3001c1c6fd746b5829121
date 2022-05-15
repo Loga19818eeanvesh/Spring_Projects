@@ -1,0 +1,4 @@
+
+server.port = 2821
+
+logging.level.org.springframework = debug

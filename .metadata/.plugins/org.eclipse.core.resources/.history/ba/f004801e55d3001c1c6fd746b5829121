@@ -1,0 +1,24 @@
+package com.springudemy.springstart.springstart;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+
+@SpringBootApplication
+public class SpringstartApplication {
+
+	public static void main(String[] args) {
+		
+		//BinarySearchImpl binarySearch = new BinarySearchImpl(new QuickSortAlgorithm());
+		
+		ApplicationContext applicationContext = SpringApplication.run(SpringstartApplication.class, args);
+		BinarySearchImpl binarySearch = applicationContext.getBean(BinarySearchImpl.class);
+		BinarySearchImpl binarySearch1 = applicationContext.getBean(BinarySearchImpl.class);
+		
+		System.out.println(binarySearch);
+		System.out.println(binarySearch1);
+		int result = binarySearch.binarySearch(new int[] {28,3,23,11}, 28);
+		System.out.println(result);
+	}
+
+}

@@ -1,0 +1,11 @@
+package spring.start.aop.springaop.bussiness;
+
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class Dao2 {
+
+	public String retriveSomething() {
+		return "Dao2";
+	}
+}

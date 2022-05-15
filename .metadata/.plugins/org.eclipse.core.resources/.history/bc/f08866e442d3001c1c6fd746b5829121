@@ -1,0 +1,15 @@
+package com.springudemy.springstart.springstart;
+
+public class BinarySearchImpl {
+	
+	
+	public int binarySearch(int[] numbers,int numberToSearchFor) {
+		//sort the array
+		//search array
+		//return result
+		
+		return 0;
+	}
+	
+	
+}

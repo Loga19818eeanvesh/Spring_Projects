@@ -1,0 +1,5 @@
+package spring.start.aop.springaop.aspect;
+
+public class BeforeAspect {
+
+}

@@ -1,0 +1,5 @@
+package com.springudemy.springstart.springstart.properties;
+
+public class SomeExternalService {
+
+}

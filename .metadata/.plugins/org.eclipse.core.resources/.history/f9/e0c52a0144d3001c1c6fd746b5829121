@@ -1,0 +1,23 @@
+package com.springudemy.springstart.springstart;
+
+public class BinarySearchImpl {
+	
+	private SortAlgorithm sortAlgorithm;
+	
+	public BinarySearchImpl(SortAlgorithm sortAlgorithm) {
+		super();
+		this.sortAlgorithm = sortAlgorithm;
+	}
+	
+	
+	public int binarySearch(int[] numbers,int numberToSearchFor) {
+		//sort the array
+		//search array
+		//return result
+		BubbleSortAlgorithm bubbleSortAlgorithm = new BubbleSortAlgorithm();
+		int [] sortedNumbers = bubbleSortAlgorithm.sort(numbers);
+		return 0;
+	}
+	
+	
+}
