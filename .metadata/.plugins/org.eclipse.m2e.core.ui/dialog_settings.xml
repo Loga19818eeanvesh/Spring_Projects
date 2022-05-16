@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="/Users/logas81855anvesh/Downloads/spring_projecs/database-demo"/>
+			<item value="/Users/logas81855anvesh/Downloads/spring_projecs/spring-aop"/>
 			<item value="/Users/logas81855anvesh/Downloads/springstart"/>
 		</list>
 		<list key="projectNameTemplate">
